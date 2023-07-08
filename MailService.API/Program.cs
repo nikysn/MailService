@@ -4,7 +4,6 @@ using MailService.API.MailService.DAL.Data;
 using MailService.API.MailService.DAL.Repositories;
 using MailService.API.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using System.Net;
 using System.Net.Mail;
 
