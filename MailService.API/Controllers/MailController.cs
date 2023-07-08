@@ -25,7 +25,7 @@ namespace MailService.API.Controllers
         /// <param name="mailRequest">Запрос на отправку письма с деталями письма</param>
         /// <returns>Результат операции отправки письма</returns>
         [HttpPost("SendMail")]
-        public async Task<ActionResult> SendMail(MailRequest mailRequest)
+        public async Task<IActionResult> SendMail(MailRequest mailRequest)
         {
             await _emailService.SendMailAsync(mailRequest);
             return Ok(mailRequest);
